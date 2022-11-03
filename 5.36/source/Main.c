@@ -3,7 +3,10 @@
 int hanoi(int n, char A, char B, char C);
 int main(void)
 {
-	int n = 3;
+	int n;
+	printf("請輸入河內塔總層數: ");
+	scanf_s("%d", &n);
+	
 	hanoi(n, '1', '2', '3');
 
 	system("pause");
